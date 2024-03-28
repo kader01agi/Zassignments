@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # 3rd Party Apps
     'rest_framework',
     # Cusom Apps
-    'signUpInOut.app.SignupinoutConfig'
+    'signUpInOut.apps.SignupinoutConfig'
 ]
 
 MIDDLEWARE = [
