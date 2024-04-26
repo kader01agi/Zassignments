@@ -20,4 +20,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("signUpInOut.urls")),
+    path("continent/", include("continent.urls")),
+    path("country/", include("country.urls")),
+    path("city/", include("cityorstate.urls")),
 ]

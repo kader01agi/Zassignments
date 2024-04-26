@@ -1,0 +1,27 @@
+views.py
+    # filter_backends = [filters.OrderingFilter]  # Add filtering backend
+
+    # def get_queryset(self):
+    #     """
+    #     Filters the queryset based on the 'continent' query parameter (optional).
+    #     """
+    #     queryset = super().get_queryset()
+    #     continent_id = self.request.query_params.get('continent')
+    #     if continent_id:
+    #         queryset = queryset.filter(countrytID__continentID=continent_id)
+    #     return queryset
+
+
+serializers.py
+# from continent.serializers import ContinentSerializer
+# from country.serializers import CountrySerializer
+    # def to_representation(self, instance):
+    #     """
+    #     Overrides the default representation to filter Cityorstate data
+    #     based on the 'continent' query parameter in the context (optional).
+    #     """
+    #     data = super().to_representation(instance)
+    #     continent_id = self.context.get('continent')
+    #     if continent_id and data['countrytID']['id'] != continent_id:
+    #         return None  # Exclude Cityorstate if not in the specified continent
+    #     return data
